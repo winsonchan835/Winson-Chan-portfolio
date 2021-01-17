@@ -1,4 +1,139 @@
-h1 {
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+	--primary-color: #2d2254;
+	--secondary--color: #f5c42f;
+	--text-color: #c5bbec;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 18px;
+  line-height: 1.6;
   text-align: center;
-  background-color: coral;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-bottom: 10px;
+}
+
+/* h1, h2 {
+  background: rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+  border-radius: 10px;
+} */
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: var(--secondary--color);
+	color: #fff;
+	border-radius: 20px;
+	padding: 8px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+.primary-text {
+	color: var(--primary-color);
+}
+
+.secondary-text {
+	color: var(--secondary--color);
+}
+
+.section {
+	position: relative;
+	padding: 0 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Home */
+
+/* About */
+
+.about {
+	min-height: 800px;
+	background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center center/cover;
+}
+
+.about .image {
+  position: absolute;
+	width: 45%;
+	top: 200px;
+	right: 30px;
+}
+
+.about .content {
+	position: absolute;
+	width: 45%;
+	top: 200px;
+	left: 50px;
+}
+
+.about .content > div {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.about .skills {
+  position: absolute;
+  width: 100%;
+  top: 600px;
+}
+
+.proficient {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  align-items: center;
+  top: 200px;
+	left: 100px;
+}
+
+.skill-name {
+  flex: 1 0 25%; /* explanation below */
+  margin: 5px;
+  height: 60px;
+
 }
